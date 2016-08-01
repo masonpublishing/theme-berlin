@@ -9,7 +9,7 @@
 body {
     font: $base-font-size Helvetica, Arial, sans-serif;
     line-height: $base-line-height;
-    color: #333;
+    /*color: #333;*/
     background: #fff;
 }
 
@@ -45,7 +45,6 @@ input[type="checkbox"] {
     h1, h2, h3 {
         font-weight: normal;
         font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;
-        color:#015581;
     }
 
     h1 {
@@ -64,7 +63,6 @@ input[type="checkbox"] {
     h3 {
         font-size: 1.5 * $base-font-size;
         line-height: $base-line-height;;
-        color:#015581;
     }
 
     h4, h5 {
@@ -120,9 +118,6 @@ input[type="checkbox"] {
     }
 
     /* -- Links -- */
-    a:link, a:visited { color: #369; }
-
-    a:hover, a:active { color: #ff8000; }
 
     img a { border:none; }
 
@@ -132,12 +127,13 @@ input[type="checkbox"] {
 
 header {
     @include container;
-    padding: rhythm(2) 0;
+    padding: rhythm(1) 0;
     position: relative;
 }
 
 #header-image {
     @include container;
+    padding: rhythm(1) 0;
 
     img {
         width: 100%;
@@ -150,10 +146,9 @@ header {
 
 #site-title {
     float:left;
-    width:50%;
+    /*width:50%;*/
     font-weight: normal;
     font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;
-    color:#015581;
     font-size: 3 * $base-font-size;
     line-height: 2 * $base-line-height;
     text-transform:uppercase;
@@ -168,37 +163,44 @@ header {
 
 #site-title a { text-decoration:none; }
 
+nav {
+    @include container;
+    border-bottom: 1px solid #ccc;
+    line-height: initial;
+    padding: rhythm(.5) 0;
+}
 #search-container {
     float:right;
-    width:45%;
+    width:25%;
     position:relative;
-    @include adjust-font-size-to(14px);
+    /*@include adjust-font-size-to(14px);*/
 
     h2 { display:none; }
 
     input[type=text], button {
-        border:1px solid #ccc;
-        background:#fafafa;
+        /*border:1px solid #ccc;*/
+        /*background:#fafafa;*/
         @include appearance(none);
         border-radius: 0;
-        height:30px;
+        /*height:30px;*/
     }
 
     input[type=text] {
-        padding:3px;
+        padding: rhythm(.5) 18px;
         width: 100%;
+        /*border-bottom: 1px solid #ccc;*/
         behavior: url("../javascripts/boxsizing.htc");
         @include box-sizing(border-box);
     }
 
     button {
-        background: #369;
-        color: white;
+        /*color: white;*/
         position: absolute;
         border: 0;
         right: 0;
         top: 0;
         width: 30px;
+        height: 100%;
         text-indent: -9999px;
 
         &:after {
@@ -221,7 +223,7 @@ header {
     right: 0;
     top: 0;
     bottom: 0;
-    border-left: 1px solid #005177;
+    border-right: 1px solid #ccc;
     position: absolute;
     text-decoration:none;
     text-indent: -9999px;
@@ -235,8 +237,8 @@ header {
         text-align:center;
         position: absolute;
         width: 100%;
-        color: #fff;
-        background:#369;
+        /*color: #fff;*/
+        /*background:#369;*/
         top: 0;
         bottom: 0;
         font-size: 14px;
@@ -255,6 +257,7 @@ header {
     border: 1px solid #e7e7e7;
     width: 100%;
     padding: 1.5em 1em;
+    line-height: 18px;
     *behavior: url("../javascripts/boxsizing.htc");
     @include box-sizing(border-box);
 
@@ -319,8 +322,8 @@ header {
 
 #primary-nav {
     clear:both;
-    @include container;
     z-index: 50;
+    display: inline-block;
 
     /* mega menu list */
     .nav-menu {
@@ -354,33 +357,36 @@ header {
         position: relative;
         overflow: visible;
 
-        &:first-child > a { border-left: 1px solid #ccc; }
+        /*&:first-child > a { border-left: 1px solid #ccc; }*/
     }
 
     /* first descendant link within a top level navigation item */
     .nav-item > a {
         position: relative;
         display: inline-block;
-        margin: 0 0 -1px 0;
-        border:1px solid #ccc;
+        margin: 0 0;
+        /*border:1px solid #ccc;*/
     }
 
     .nav-item:not(:first-child) > a {
         margin-left: -1px;
+    }
+    .nav-item:first-child a {
+        padding-left: 0;
     }
 
     /* focus/open states of first descendant link within a top level
        navigation item */
     .nav-item > a:focus,
     .nav-item > a.open {
-        border: 1px solid #dedede;
+        /*border: 1px solid #dedede;*/
     }
 
 
     /* open state of first descendant link within a top level
        navigation item */
     .nav-item > a.open {
-        background-color: #fafafa;
+        /*background-color: #fafafa;*/
         z-index: 1;
     }
 
@@ -451,13 +457,13 @@ header {
         text-decoration:none;
         display:block;
         padding: rhythm(.5) 18px;
-        background:#fafafa;
+        /*background:#fafafa;*/
     }
 
     a:hover,
     a:focus,
     li.active a {
-        color:#ff8000;
+        /*color:#ff8000;*/
         position: relative;
         z-index: 1;
     }
@@ -485,11 +491,11 @@ header {
         margin-right: 20px;
     }
 
-    a { color:#666; }
+    /*a { color:#666; }*/
 
     .active a {
-        background:#fff;
-        color:#333;
+        /*background:#fff;*/
+        /*color:#333;*/
         font-weight:bold;
     }
 
@@ -546,10 +552,10 @@ header {
 
 #content {
     overflow:hidden;
-    border:1px solid #ccc;
-    background:#fff;
+    /*border:1px solid #ccc;*/
+    /*background:#fff;*/
     @include container;
-    padding: rhythm(1) 10px;
+    padding: rhythm(1) 0;
     z-index: 0;
 }
 
@@ -636,7 +642,7 @@ nav + .exhibit {
         padding: 2px;
         height: rhythm(7);
         width: auto;
-        background-color: #fff;
+        /*background-color: #fff;*/
     }
 }
 
@@ -664,9 +670,19 @@ nav + .exhibit {
 
 .items #content {
     @include container;
-    padding: rhythm(1) 10px;
+    padding: rhythm(1) 0;
 }
 
+.items #main-block {
+    width: 70%;
+    display:inline-block;
+    float:left;
+}
+.items #metadata-sidebar {
+    width:30%;
+    display:inline-block;
+    padding: 0 rhythm(1);
+}
 #next-item { float: right; }
 
 .item-description a.show {
@@ -718,6 +734,9 @@ ul.title-list {
   margin-right:10px;
 }
 
+#viewer-block {
+    width:100%;
+}
 #item-image img {
   width:100%;
   }
@@ -906,7 +925,7 @@ ul.title-list {
     width: $base-line-height;
     position: relative;
     height: $base-line-height;
-    color: #666;
+    /*color: #666;*/
 
     &:after {
         content: "\f00d";
@@ -1043,7 +1062,7 @@ ul.title-list {
 
     & > li {
         display: inline-block;
-        background-color: #eee;
+        /*background-color: #eee;*/
         padding: rhythm(.25) rhythm(.5);
         margin: 0 rhythm(.5) rhythm(.5) 0;
     }
