@@ -163,7 +163,7 @@ header {
 
 #site-title a { text-decoration:none; }
 
-nav {
+#top-navbar {
     @include container;
     border-bottom: 1px solid #ccc;
     line-height: initial;

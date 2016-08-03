@@ -630,7 +630,7 @@ header:after {
   text-decoration: none;
 }
 
-nav {
+#top-navbar {
   position: relative;
   margin: 0 auto;
   padding: 0;
@@ -639,7 +639,7 @@ nav {
   line-height: initial;
   padding: 0.75em 0;
 }
-nav:after {
+#top-navbar:after {
   content: "\0020";
   display: block;
   height: 0;
@@ -647,17 +647,17 @@ nav:after {
   visibility: hidden;
 }
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-  nav {
+  #top-navbar {
     width: 768px;
   }
 }
 @media only screen and (max-width: 767px) {
-  nav {
+  #top-navbar {
     width: 300px;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  nav {
+  #top-navbar {
     width: 420px;
   }
 }

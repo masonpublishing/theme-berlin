@@ -96,7 +96,7 @@
             <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
             <div id="site-title"><?php echo link_to_home_page(theme_logo()); ?></div>
         </header>
-        <nav>
+        <div id="top-navbar">
              <div id="primary-nav" role="navigation">
                  <?php
                       echo public_nav_main();
@@ -116,7 +116,7 @@
                 <?php echo search_form(); ?>
                 <?php endif; ?>
             </div>
-        </nav>
+        </div>
         <?php echo theme_header_image(); ?>
 
     <div id="content" role="main" tabindex="-1">
