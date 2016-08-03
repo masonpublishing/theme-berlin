@@ -5,29 +5,24 @@
 
       <div id="viewer-block">
           <?php if (metadata('item', array('Item Type Metadata', 'Player'))): ?> 
-              <div class="item-player">
-                  <?php echo metadata('item', array('Item Type Metadata', 'Player')); ?>
-              </div>
-              <div id="transcription-window" class="element">
-                  <p><?php echo metadata('item', array('Item Type Metadata', 'Transcription')); ?></p>
-              </div>
+              <?php echo all_element_texts('item', array('show_element_sets' => 'Item Type Metadata')); ?>
+          
           <?php elseif (metadata('item', array('Item Type Metadata', 'Text'))): ?>
-              <?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
-              <div id="transcription-window" class="element">
-                  <h3><?php echo __('Annotations'); ?></h3>
-                  <?php echo metadata('item', array('Item Type Metadata', 'Text')); ?>
-              </div>
+              <?php echo files_for_item(); ?>
+              <?php echo all_element_texts('item', array('show_element_sets' => 'Item Type Metadata')); ?>
           <?php else: ?>
               <?php if (metadata('item', 'has files')): ?>
-                  <?php echo files_for_item(array('imageSize' => 'fullsize', 'imgAttributes' => array('class' => 'fullsize-image'))); ?>
+                  <?php echo item_image_gallery(array('link'=>array('data-lightbox'=>'lightbox')), 'fullsize'); ?>
               <?php endif; ?>
+              <?php echo all_element_texts('item', array('show_element_sets' => 'Item Type Metadata')); ?>
           <?php endif; ?>
 
       </div>
 
-      <h3><?php echo __('Files'); ?></h3>
-      <div id="item-images">
-           <?php echo files_for_item(); ?>
+      <!-- The following prints a citation for this item. -->
+      <div id="item-citation" class="element">
+          <h3><?php echo __('Citation'); ?></h3>
+          <div class="element-text"><?php echo metadata('item','citation',array('no_escape'=>true)); ?></div>
       </div>
 
      <?php if(metadata('item','Collection Name')): ?>
@@ -45,13 +40,24 @@
       </div>
       <?php endif;?>
 
-      <!-- The following prints a citation for this item. -->
-      <div id="item-citation" class="element">
-          <h3><?php echo __('Citation'); ?></h3>
-          <div class="element-text"><?php echo metadata('item','citation',array('no_escape'=>true)); ?></div>
+      <!-- Item files -->
+
+      <?php if (metadata('item', 'has files')): ?>
+        <div id="collection" class="element">
+          <h3><?php echo __('Files for Download'); ?></h3>
+          <div class="element-text">
+              <ul>
+                  <?php foreach (loop('files', $this->item->Files) as $file): ?>
+                      <li><?php echo link_to_file_show(array('class'=>'show', 'title'=>__('View File Metadata'))); ?></li>
+                  <?php endforeach; ?>
+              </ul>         
+          </div>
+        </div>
+      <?php endif; ?>
+           
+           <? //php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
       </div>
-         <?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
-    </div>
+
 
     <!-- Items metadata -->
     <div id="metadata-sidebar">
@@ -65,5 +71,5 @@
     </ul>
 
 </div> <!-- End of Primary. -->
-
+<?php echo js_tag('lightbox', 'javascripts/vendor'); ?>
  <?php echo foot(); ?>
