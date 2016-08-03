@@ -27,7 +27,7 @@ input[type="tel"],
 input[type="url"],
 input[type="password"],
 textarea {
-    border: 1px solid #ccc;
+    border: 1px solid #d1d3d5;
 }
 
 input[type="checkbox"] {
@@ -107,7 +107,7 @@ input[type="checkbox"] {
     table { width:100%; }
 
     th, td {
-        border-bottom:1px solid #ccc;
+        border-bottom:1px solid #d1d3d5;
         margin:0;
         padding: rhythm(.5) 0;
     }
@@ -139,7 +139,7 @@ header {
         width: 100%;
         height: auto;
         vertical-align: bottom;
-        border: solid #ccc;
+        border: solid #d1d3d5;
         border-width: 1px 1px 0 1px;
     }
 }
@@ -165,7 +165,7 @@ header {
 
 #top-navbar {
     @include container;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #d1d3d5;
     line-height: initial;
     padding: rhythm(.5) 0;
 }
@@ -178,7 +178,7 @@ header {
     h2 { display:none; }
 
     input[type=text], button {
-        /*border:1px solid #ccc;*/
+        /*border:1px solid #d1d3d5;*/
         /*background:#fafafa;*/
         @include appearance(none);
         border-radius: 0;
@@ -188,7 +188,7 @@ header {
     input[type=text] {
         padding: rhythm(.5) 18px;
         width: 100%;
-        /*border-bottom: 1px solid #ccc;*/
+        /*border-bottom: 1px solid #d1d3d5;*/
         behavior: url("../javascripts/boxsizing.htc");
         @include box-sizing(border-box);
     }
@@ -223,7 +223,7 @@ header {
     right: 0;
     top: 0;
     bottom: 0;
-    border-right: 1px solid #ccc;
+    border-right: 1px solid #d1d3d5;
     position: absolute;
     text-decoration:none;
     text-indent: -9999px;
@@ -357,7 +357,7 @@ header {
         position: relative;
         overflow: visible;
 
-        /*&:first-child > a { border-left: 1px solid #ccc; }*/
+        /*&:first-child > a { border-left: 1px solid #d1d3d5; }*/
     }
 
     /* first descendant link within a top level navigation item */
@@ -365,7 +365,7 @@ header {
         position: relative;
         display: inline-block;
         margin: 0 0;
-        /*border:1px solid #ccc;*/
+        /*border:1px solid #d1d3d5;*/
     }
 
     .nav-item:not(:first-child) > a {
@@ -419,7 +419,7 @@ header {
         top: rhythm(2);
         margin-top: 1px;
         z-index: 1000;
-        @include box-shadow(#ccc 0 3px 5px);
+        @include box-shadow(#d1d3d5 0 3px 5px);
     }
 
     /* list of items within sub-navigation panel */
@@ -443,7 +443,7 @@ header {
     }
 
     .sub-nav > li {
-        border-color: #ccc;
+        border-color: #d1d3d5;
         @include trailing-border(1px, 0, $base-font-size, solid);
     }
 
@@ -483,7 +483,7 @@ header {
 #secondary-nav, .secondary-nav {
     @include trailer();
     overflow: auto;
-    border-bottom:1px solid #ccc;
+    border-bottom:1px solid #d1d3d5;
     clear: both;
 
     li {
@@ -539,7 +539,7 @@ header {
 }
 
 .page-input input[type=text] {
-    border: 1px solid #ccc;
+    border: 1px solid #d1d3d5;
     text-align: right;
     width: 35px;
     margin-right: 5px;
@@ -552,7 +552,7 @@ header {
 
 #content {
     overflow:hidden;
-    /*border:1px solid #ccc;*/
+    /*border:1px solid #d1d3d5;*/
     /*background:#fff;*/
     @include container;
     padding: rhythm(1) 0;
@@ -569,7 +569,7 @@ header {
 }
 
 .image img {
-    border: 1px solid #ccc;
+    border: 1px solid #d1d3d5;
     float: left;
     padding: 2px;
     width: auto;
@@ -589,7 +589,7 @@ header {
 #sort-links + .item,
 #sort-links + .collection,
 nav + .exhibit {
-    border-top: 1px solid #eee;
+    border-top: 1px solid #d1d3d5;
 }
 
 
@@ -628,7 +628,7 @@ nav + .exhibit {
 .featured,
 #featured-exhibit {
     overflow:hidden;
-    background:#eee;
+    background:#d1d3d5;
     padding: rhythm() 20px;
     @include trailer();
 
@@ -638,7 +638,7 @@ nav + .exhibit {
 
     img {
         float: left;
-        border: 1px solid #ccc;
+        border: 1px solid #d1d3d5;
         padding: 2px;
         height: rhythm(7);
         width: auto;
@@ -648,7 +648,7 @@ nav + .exhibit {
 
 #recent-items .item {
     overflow:hidden;
-    border-bottom:1px solid #ccc;
+    border-bottom:1px solid #d1d3d5;
     @include trailer();
 
     .image {
@@ -748,7 +748,7 @@ ul.title-list {
     overflow: scroll;
     padding: rhythm(1);
     border-width: 10px 1px;
-    border-color: #ccc;
+    border-color: #d1d3d5;
     border-style: solid;
 }
 
@@ -779,7 +779,7 @@ ul.title-list {
 
 .browse .item {
     clear: both;
-    border-bottom:1px solid #eee;
+    border-bottom:1px solid #d1d3d5;
     padding: rhythm(2) 0;
     float: left;
     width: 100%;
@@ -788,7 +788,7 @@ ul.title-list {
 .item-pagination {
     clear:both;
     overflow:hidden;
-    border-top:1px solid #eee;
+    border-top:1px solid #d1d3d5;
     padding-top:18px;
     margin-top: rhythm(1);
 }
@@ -973,7 +973,7 @@ ul.title-list {
 .browse .collection.record,
 .browse .exhibit {
     clear: both;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #d1d3d5;
     float: left;
     width: 100%;
     @include padding-leader();
@@ -988,7 +988,7 @@ ul.title-list {
 .collection .image,
 .exhibit .image {
     display: block;
-    @include box-shadow(-5px -5px 0 -1px #f2f2f2, -5px -5px 0 #ccc, -8px -8px 0 -1px #ddd, -8px -8px 0 #CCC);
+    @include box-shadow(-5px -5px 0 -1px #f2f2f2, -5px -5px 0 #d1d3d5, -8px -8px 0 -1px #ddd, -8px -8px 0 #d1d3d5);
     margin: 0 rhythm() rhythm() 9px;
 }
 
@@ -1042,7 +1042,7 @@ ul.title-list {
     a {
         display: block;
         height: rhythm(4);
-        border: 1px solid #ccc;
+        border: 1px solid #d1d3d5;
         padding: 2px;
     }
 
@@ -1054,7 +1054,7 @@ ul.title-list {
 
 .collections .item {
     overflow: hidden;
-    border-color: #ccc;
+    border-color: #d1d3d5;
     @include leading-border(1px, 0, $base-font-size, solid);
     @include leader();
 }
@@ -1083,12 +1083,12 @@ ul.title-list {
 #item-filters ul, #search-filters ul {
     padding-left: 0;
     list-style-type: none;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #d1d3d5;
     margin: rhythm(-.5) 0 0;
 
     & > li {
         display: inline-block;
-        /*background-color: #eee;*/
+        /*background-color: #d1d3d5;*/
         padding: rhythm(.25) rhythm(.5);
         margin: 0 rhythm(.5) rhythm(.5) 0;
     }
@@ -1158,7 +1158,7 @@ footer {
 /* @group ----- Exhibit Builder ----- */
 
 .pagination + .exhibit {
-    border-top: 1px solid #eee;
+    border-top: 1px solid #d1d3d5;
 }
 
 #exhibit-pages {
@@ -1179,14 +1179,14 @@ footer {
     & > ul {
         margin-left: 0;
         @include leading-border(1px, 1, $base-font-size, solid);
-        border-color: #eee;
+        border-color: #d1d3d5;
         padding-left: 0;
         list-style-type: none;
     }
 
     & > ul > li {
         @include trailing-border(1px, 1, $base-font-size, solid);
-        border-color: #eee;
+        border-color: #d1d3d5;
         @include trailer();
     }
 
