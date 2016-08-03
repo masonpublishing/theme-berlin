@@ -407,7 +407,7 @@ body {
   font: 14px Helvetica, Arial, sans-serif;
   line-height: 21px;
   /*color: #333;*/
-  background: #fff;
+  /*background: #fff;*/
 }
 
 form, fieldset {
@@ -703,7 +703,7 @@ header:after {
   content: "\f002";
   text-indent: 0;
   position: absolute;
-  top: 0;
+  top: 4px;
   left: 0;
   height: 30px;
   line-height: 30px;
@@ -748,7 +748,7 @@ header:after {
   position: absolute;
   top: 30px;
   left: 0;
-  border: 1px solid #e7e7e7;
+  border: 1px solid #d1d3d5;
   width: 100%;
   padding: 1.5em 1em;
   line-height: 18px;
@@ -890,7 +890,7 @@ header:after {
   margin-top: 1px;
   padding: 0;
   border: 1px solid #dedede;
-  background-color: #fff;
+  /*background-color: #fff;*/
 }
 #primary-nav .sub-nav.open {
   display: block;
@@ -2008,7 +2008,7 @@ footer nav + p {
 .exhibit-page-nav a:hover,
 .exhibit-page-nav a:active,
 .exhibit-page-nav .current a {
-  background: #ff8000;
+  /*background:#ff8000;*/
 }
 
 .exhibit-pagination .next a {

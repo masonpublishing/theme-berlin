@@ -31,6 +31,7 @@
     ($buttonColor = get_theme_option('button_color')) || ($buttonColor = "#000000");
     ($buttonTextColor = get_theme_option('button_text_color')) || ($buttonTextColor = "#FFFFFF");
     ($titleColor = get_theme_option('header_title_color')) || ($titleColor = "#000000");
+    ($accentColor = get_theme_option('accent_color')) || ($accentColor = "#CCC")
     ?>
     <style>
         body {
@@ -64,10 +65,9 @@
           color: <?php echo $buttonTextColor; ?> !important;
         }
 
-        #metadata-sidebar {
-            background-color: <?php echo  themeCustomizer_brighten($buttonColor, 40); ?>;
-        }
-        
+        .accent-background {
+            background-color: <?php echo $accentColor; ?>;
+        }        
         .mobile li { 
             background-color: <?php echo themeCustomizer_brighten($buttonColor, 40); ?>;
         }

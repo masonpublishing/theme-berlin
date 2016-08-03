@@ -60,7 +60,7 @@
 
 
     <!-- Items metadata -->
-    <div id="metadata-sidebar">
+    <div id="metadata-sidebar" class="accent-background">
       <?php echo all_element_texts('item', array('show_element_sets' => 'Dublin Core')); ?>
     </div>
 
