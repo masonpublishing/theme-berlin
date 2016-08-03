@@ -55,7 +55,6 @@
         </div>
       <?php endif; ?>
            
-           <? //php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
       </div>
 
 
