@@ -12,8 +12,8 @@
         <p><?php echo $copyright; ?></p>
         <?php endif; ?>
         <nav><?php echo public_nav_main()->setMaxDepth(0); ?></nav>
-        <p><?php echo __('Proudly powered by <a href="http://omeka.org">Omeka</a>.'); ?></p>
-
+        <p><?php echo __('Proudly powered by <a href="http://omeka.org">Omeka</a>.'); ?><br />
+            <?php echo __('Theme by <a href="http://library.gmu.edu/publishing">Mason Publishing</a>.'); ?></p>
     </div><!-- end footer-content -->
 
      <?php fire_plugin_hook('public_footer', array('view'=>$this)); ?>

@@ -404,8 +404,8 @@ th {
 }
 
 body {
-  font: 12px Helvetica, Arial, sans-serif;
-  line-height: 18px;
+  font: 14px Helvetica, Arial, sans-serif;
+  line-height: 21px;
   /*color: #333;*/
   background: #fff;
 }
@@ -436,7 +436,7 @@ input[type="checkbox"] + label {
 
 /* -- Headings -- */
 h1, h2, h3, h4, h5, h6 {
-  margin-bottom: 18px;
+  margin-bottom: 21px;
 }
 
 h1, h2, h3 {
@@ -445,26 +445,26 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 30px;
-  line-height: 36px;
+  font-size: 35px;
+  line-height: 42px;
   text-transform: uppercase;
   letter-spacing: .1em;
   word-break: break-word;
 }
 
 h2 {
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 28px;
+  line-height: 42px;
 }
 
 h3 {
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 21px;
+  line-height: 21px;
 }
 
 h4, h5 {
-  font-size: 15px;
-  line-height: 18px;
+  font-size: 17.5px;
+  line-height: 21px;
 }
 
 h4 {
@@ -615,8 +615,8 @@ header:after {
   /*width:50%;*/
   font-weight: normal;
   font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;
-  font-size: 36px;
-  line-height: 36px;
+  font-size: 42px;
+  line-height: 42px;
   text-transform: uppercase;
   letter-spacing: .2em;
   position: relative;
@@ -772,7 +772,7 @@ nav:after {
 }
 
 #search-form fieldset fieldset {
-  margin-bottom: 18px;
+  margin-bottom: 21px;
 }
 
 #search-container.with-advanced .button {
@@ -927,9 +927,9 @@ nav:after {
 }
 #primary-nav .sub-nav > li {
   border-color: #ccc;
-  border-bottom-width: 0.08333em;
+  border-bottom-width: 0.07143em;
   border-bottom-style: solid;
-  padding-bottom: -0.08333em;
+  padding-bottom: -0.07143em;
 }
 #primary-nav .sub-nav a {
   width: 100%;
@@ -1010,7 +1010,7 @@ nav:after {
 .pagination a, .pagination form {
   text-decoration: none;
   padding: 0 10px;
-  line-height: 36px;
+  line-height: 42px;
   display: inline-block;
 }
 
@@ -1581,9 +1581,9 @@ ul.title-list {
 
 .remove_search {
   text-indent: -9999px;
-  width: 18px;
+  width: 21px;
   position: relative;
-  height: 18px;
+  height: 21px;
   /*color: #666;*/
 }
 .remove_search:after {
@@ -1595,7 +1595,7 @@ ul.title-list {
   top: 0;
   left: 0;
   position: absolute;
-  line-height: 18px;
+  line-height: 21px;
 }
 
 /* @end */
@@ -1741,9 +1741,9 @@ ul.title-list {
 .collections .item {
   overflow: hidden;
   border-color: #ccc;
-  border-top-width: 0.08333em;
+  border-top-width: 0.07143em;
   border-top-style: solid;
-  padding-top: -0.08333em;
+  padding-top: -0.07143em;
   margin-top: 1.5em;
 }
 
@@ -1886,17 +1886,17 @@ footer nav + p {
 }
 #exhibit-pages > ul {
   margin-left: 0;
-  border-top-width: 0.08333em;
+  border-top-width: 0.07143em;
   border-top-style: solid;
-  padding-top: 1.41667em;
+  padding-top: 1.42857em;
   border-color: #eee;
   padding-left: 0;
   list-style-type: none;
 }
 #exhibit-pages > ul > li {
-  border-bottom-width: 0.08333em;
+  border-bottom-width: 0.07143em;
   border-bottom-style: solid;
-  padding-bottom: 1.41667em;
+  padding-bottom: 1.42857em;
   border-color: #eee;
   margin-bottom: 1.5em;
 }
