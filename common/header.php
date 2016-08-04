@@ -65,7 +65,7 @@
           color: <?php echo $buttonTextColor; ?> !important;
         }
 
-        .accent-background {
+        .accent-background, #featured-exhibit {
             background-color: <?php echo $accentColor; ?>;
         }        
         .mobile li { 
